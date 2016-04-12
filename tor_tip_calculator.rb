@@ -35,7 +35,8 @@ total = gets
 print "Please enter the tip percentage as a number (e.g. 10, 15.00, 20.34...): "
 tip_percent = gets
 
-
+# In ruby, you can try a block of code and catch an exception using the begin, rescue, else, end block.
+# This is analogous to the Java try-catch model in some respects.
 begin
   # In Ruby you can use object superclasses like Integer and Float to check a value's format and then use rescue to catch the exception if it's not the correct type.
   Float(total)
