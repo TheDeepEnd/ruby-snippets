@@ -20,10 +20,11 @@
 #        function_body
 #      end
 def calculate_tip(bill_total, tip_percent)
-  puts "Total is $" + "%.2f" % bill_total.to_s
-  puts "Tip rate is " + "%.2f" % tip_percent.to_s + "%"
-  print "Tip for bill at " + "%.2f" % tip_percent.to_s + "%" + " is $"
-  puts '%.2f' % (bill_total * (tip_percent/100.00)).to_s + "\n"
+  # You can format float precision with the format '%.<number>f' % <value>
+  puts "Total is $" + "%.2f" % bill_total
+  puts "Tip rate is " + "%.2f" % tip_percent + "%"
+  print "Tip for bill at " + "%.2f" % tip_percent + "%" + " is $"
+  puts '%.2f' % (bill_total * (tip_percent/100.00)) + "\n"
   # Double quotes ("") or single quotes('') can both be used for strings
 end
 
