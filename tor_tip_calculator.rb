@@ -3,7 +3,7 @@
   =begin and =end are used to handle multi-line comments in ruby.
   The challenge for this program is to write a program that accepts a user's input
   for a bill total and a tip percentage, and returns the corresponding tip value.
-  
+
   Here's the example input and output
   ruby tor_tip_calculator.rb
   Please enter your bill total value (Don't enter a currency symbol): $
@@ -21,8 +21,8 @@
 #      end
 def calculate_tip(bill_total, tip_percent)
   puts "Total is $" + "%.2f" % bill_total.to_s
-  puts "Tip rate is " + tip_percent.to_s + "%"
-  print "Tip for bill at " + tip_percent.to_s + "%" + " is $"
+  puts "Tip rate is " + "%.2f" % tip_percent.to_s + "%"
+  print "Tip for bill at " + "%.2f" % tip_percent.to_s + "%" + " is $"
   puts '%.2f' % (bill_total * (tip_percent/100.00)).to_s + "\n"
   # Double quotes ("") or single quotes('') can both be used for strings
 end
