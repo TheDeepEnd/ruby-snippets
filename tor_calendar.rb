@@ -1,3 +1,11 @@
+# This program solves a challenge where a the program must accept user input
+# for a month and a day, validate that input, and use the date methods
+# native to the language to calculate number of days till that day.
+# The program must get today's date from the system internal date using
+# the language specific date functions.
+# In the event that a user inputs a day that is earlier than today,
+# the program must give the number of days till that day next year.
+
 require 'date'
 
 def get_month_and_day
